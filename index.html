@@ -1,1 +1,200 @@
-Hello World Trial 3
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D1SMX07P5"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2D1SMX07P5');
+        </script>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Catherine Sanso: Portfolio</title>
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Catherine Sanso</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img\headshot.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="assets\resume_catherine_sanso.pdf" target=_blank">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Catherine
+                        <span class="text-primary">Sanso</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Data Scientist ·
+                        <a href="mailto:catherinesanso@gmail.com">catherinesanso@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5"><p>I am a results-oriented Data Scientist with a passion for crafting powerful machine learning models, adept at using SQL, Python, and key libraries like NumPy, Scikit-learn, Pandas, TensorFlow, and Keras.</p>
+                    <p>I specialize in turning intricate data into actionable insights, fostering innovation through robust data analysis. With my engineering background and professional experience, I've honed my mathematical, statistical, and probabilistic skills, comfortably handling extensive datasets for programming, data wrangling, modeling, and visualization. My unwavering work ethic consistently drives me to surpass project goals. My core approach emphasizes collaboration, and I thrive on closely engaging with cross-functional teams to fully grasp their needs and objectives.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/data-with-catherine/" target=_blank><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/catherinesanso" target=_blank><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://medium.com/@catherinesanso" target=_blank><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="portfolio">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Portfolio</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Speech Emotion Recognition</h3>
+                            <div class="subheading mb-3"> <a href="assets\Speech Emotion Recognition.pdf" target="_blank">Project Overview</a> · <a href="https://github.com/catherinesanso/Speech-Emotion-Recognition" target=_blank>Github Repo</a> </div>
+                            <img src="img\speech2.png" width="450" height="250">
+                            <br><br>
+                            <p>I am tasked with developing an emotion classification system using the CREMA-D Audio Dataset. The objective is to build a machine learning model that can accurately classify audio recordings into six distinct emotional categories: Anger, Disgust, Fear, Happiness, Neutral, and Sadness.</p>
+                            <p>The CREMA-D dataset stands for "Crowd Sourced Emotional Multimodal Actors Dataset". This dataset contains 7,442 original clips from 9 actors, of which 48 are male and 43 are female between the ages of 20-74. The ethnicities included are African-American, Asian, Caucasian, Hispanic, and Unspecified. The actors spoke up to 12 sentences using one of 6 emotions (anger, disgust, fear, happiness, neutrality, sadness) with 4 different levels of emotional intensity (low, medium, high, unspecified).</p>
+                            <p>While there are several metrics by which to measure a CNN's performance (such as accuracy, precision, recall, F1, etc), this model uses accuracy as a measure of the overall correctness of the model's predictions. Accuracy calculates the ratio of correctly classified audio samples to the total number of samples and is appropriate because the six classes are balanced. Because this multi-class classification CNN has six target outputs, the baseline accuracy per class would be ~17%. There are no universally fixed industry standards for success within CNN models, as this judgement varies by domain, task type, data complexity, and real-world performance limitations. For this project, the models will be considered successful if its accuracy on both the testing and validation sets exceed 90%.</p>
+                      
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">TSLA Time Series Forecasts</h3>
+                            <div class="subheading mb-3"> <a href="assets\TSLA Time Series Forecasting.pdf" target="_blank">Project Overview</a> · <a href="https://github.com/catherinesanso/TSLA-Time-Series-Forecasts" target=_blank>Github Repo</a> </div>
+                            <img src="img\tsla.jpg" width="450" height="250">
+                            <br><br>
+                            <p>Python, with its vast ecosystem of libraries and tools, has become a preferred language for financial analysis and prediction. Among its many applications, scraping financial data using Yahoo's API has gained popularity due to several advantages. This research explores the benefits of Python's Yahoo API scraping, focusing on its utility in predicting Tesla's closing prices, incorporating sentiment analysis, and explores time series modeling, its assumptions, various methods, and its advantages and limitations.<\p>
+                            <p>Predicting stock prices, like Tesla's (NYSE: TSLA), is a complex task that combines financial indicators, market sentiment, and historical data. This research encompasses several time series modeling techniques of varying complexity to analyze and forecast sequential data. Time series modeling is essential in the domain of financial analysis, such as predicting stock prices. This project delves into several types of time series modeling, each with its unique approach and use cases: Naive Forecast, Historic Mean, Simple Exponential Smoothing, Holt-Winters', SARIMA, and SARIMAX.<\p>
+                      
+                        </div>
+
+
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Wine Recommendation System</h3>
+                            <div class="subheading mb-3"> <a href="assets\Red Wine Recommendation Systems.pdf" target="_blank">Project Overview</a> · <a href="https://github.com/catherinesanso/Wine-Recommendation-System" target=_blank>Github Repo</a> </div>
+                            <img src="img\wine.jpg" width="450" height="250">
+                            <br><br>
+                            <p>Recommendation systems, often referred to as recommender systems or recommendation engines, are a cornerstone of modern digital experiences. They are the algorithms behind personalized suggestions that we encounter in our daily online interactions, whether it's movie recommendations on Netflix, product suggestions on Amazon, or playlist recommendations on Spotify. These systems are designed to analyze and understand user preferences and behavior, enabling platforms to provide tailored content, products, or services.<\p>
+                            <p>I am leading a team of consultants who are tasked with pitching recommendation systems to executives at Wine.com. There is great potential in leveraging the website's vast user and product data to drive revenue and enhance user experiences. The challenge is harnessing this wealth of information effectively. My proposal is to implement three key recommender systems tailored to Wine.com's business: Polularity Model, Content-Based Filtering, and Collaborative Filtering<\p>
+                            <p> Ultimately, our recommendation engines will significantly enhance the user experience, drive sales, and increase user retention. They provide the means to deliver tailored advertisements, which, in turn, will maximize ad revenue. With these systems in place, Wine.com will not only satisfy existing customers but also attract new ones, fostering long-term growth and profitability.</p>
+                        </div>
+            </section>
+
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Technologies</div>
+                    <p>- Python<br>
+                      - SQL<br>
+                      - R <br>                            
+                      - Jupyter Notebook<br>
+                      - GitHub<br>
+                      - Tableau<br>
+                      - Power BI<br>
+                      - Google Suite<br>
+                      - Office 365<br>
+                    <div class="subheading mb-3">Python Libraries</div>
+                    <p>- Pandas<br>
+                      - NumPy<br>
+                      - SciPy<br>                            
+                      - Matplotlib<br>
+                      - Seaborn<br>
+                      - Scikit-Learn<br>
+                      - Natural Language Toolkit (NLTK)<br>
+                      - Beautiful Soup<br>
+                      - Keras<br>                    
+                      - TensorFlow<br>
+                      - Statsmodels<br>
+                
+                    <div class="subheading mb-3">Competencies</div>
+                    <p>- Data Cleaning<br>
+                      - Exploratory Data Analysis<br>
+                      - Feature engineering<br>
+                      - Predictive Modeling<br>
+                      - Data Visualization<br>
+                      - NLP<br>
+                      - Feature engineering<br>
+            
+                    <div class="subheading mb-3">Modeling Experience</div>
+                    <p>- Supervised Learning: Linear/Logistic Regressions | Classifications | Ensemble Models (Random Forests, Bagging, Boosting, Stacking)<br>
+                      - Natural Language Processing (NLP): Web scraping, APIs<br>
+                      - Unsupervised Learning: Clustering (K-Means, DBSCAN) | Dimensionality Reduction (PCA) | Recommendation Systems | Transfer Learning<br>
+                      - Neural Nets (NNs)<br>
+                      - Time Series<br>
+                      - Experimental Design & A/B Testing<br>
+
+                    </div>
+            </section>
+                                
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">General Assembly</h3>
+                            <div class="subheading mb-3">Data Science Immersive</div>
+
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2023 - October 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">The Cooper Union</h3>
+                            <div class="subheading mb-3">Masters of Engineering in Civil Engineering <br> Bachelors of Engineering in Civil Engineering</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"> September 2010 - May 2014</span></div>
+                </div>
+            </section>
+
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>
+                   I'm a data scientist with a keen interest in applying complex math techniques to finance, economics, and current events. 
+                   </p>
+                    <p class="mb-0">When I'm not wrangling data sets, you can find me on the golf course or volleyball court, or outside with a good novel. </p>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
