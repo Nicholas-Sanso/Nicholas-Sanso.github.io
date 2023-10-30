@@ -118,9 +118,17 @@ Validation accuracy of the Knn, RF, and Decision Tree models show engagement on 
                             <div class="subheading mb-3"> <a href="assets\Red Facial Age Classifiers.pdf" target="_blank">Project Overview</a> · <a href="https://github.com/catherinesanso/Wine-Recommendation-System" target=_blank>Github Repo</a> </div>
                             <img src="img\age_facial_image.png" width="250" height="250">
                             <br><br>
-                            <p>objective 1<\p>
-                            <p>objective 2<\p>
-                            <p>objective 3</p>
+                            <p>Success will be determined by whether I can create a model that outperforms the two base models. The base models are the randomly
+                                classifying model which will be correct 12.5% of the time and the other base model is Google's Efficient Net model, which is a pre-trained
+                                model created by Alphabet. 
+<\p>
+                            <p>Data was collected from kaggle which categorized the images by their ages from 0 to 99. These groupings were collapsed into 8 age categories.
+                                These groupings led to imbalanced classes. Data augmentation techniques of rotating and flipping were then applied to help balance the classes.
+                                The more underrepresented a class, the more rotated and flipped versions of the images were created until all classes had 2612 images.<\p>
+                            <p>The increase in test data's loss function and drop in test's accuracy rate with the inclusion of the Dropout function to the model architecture indicates that 
+                                there are probably a limited number of patterns that the model relies heavily on. The improvement in performance with the reduction in batch size indicates that the model may have been converging to a local minimum when minimizing the loss function during the (training) gradient descent process. 
+                                Reducing batch size likely led to a more stochastic gradient descent, helping the model bypass local minimums. Considerations for model performance must be balanced against hardware requirements. MaxPooling2D’s contribution to reducing training time is indispensable for all CNN models.
+                                A model that outperformed the base model was established.</p>
                         </div>
             </section>
 
