@@ -77,9 +77,14 @@
                             <div class="subheading mb-3"> <a href="assets\Subreddit Classification.pdf" target="_blank">Project Overview</a> · <a href="https://github.com/catherinesanso/Speech-Emotion-Recognition" target=_blank>Github Repo</a> </div>
                             <img src="img\preprocessing_for_subreddit_classifier_2.png" width="450" height="250">
                             <br><br>
-                            <p>I am tasked with developing an emotion classification system using the CREMA-D Audio Dataset. The objective is to build a machine learning model that can accurately classify audio recordings into six distinct emotional categories: Anger, Disgust, Fear, Happiness, Neutral, and Sadness.</p>
-                            <p>The CREMA-D dataset stands for "Crowd Sourced Emotional Multimodal Actors Dataset". This dataset contains 7,442 original clips from 9 actors, of which 48 are male and 43 are female between the ages of 20-74. The ethnicities included are African-American, Asian, Caucasian, Hispanic, and Unspecified. The actors spoke up to 12 sentences using one of 6 emotions (anger, disgust, fear, happiness, neutrality, sadness) with 4 different levels of emotional intensity (low, medium, high, unspecified).</p>
-                            <p>While there are several metrics by which to measure a CNN's performance (such as accuracy, precision, recall, F1, etc), this model uses accuracy as a measure of the overall correctness of the model's predictions. Accuracy calculates the ratio of correctly classified audio samples to the total number of samples and is appropriate because the six classes are balanced. Because this multi-class classification CNN has six target outputs, the baseline accuracy per class would be ~17%. There are no universally fixed industry standards for success within CNN models, as this judgement varies by domain, task type, data complexity, and real-world performance limitations. For this project, the models will be considered successful if its accuracy on both the testing and validation sets exceed 90%.</p>
+                            <p> The objective was to build a model that will use submission text complexity, submission engagement, and submission term (word) frequency to distinguish which subreddit a submission was posted to (r_investing or r_stocks).</p>
+                            <p> A series of base models were generated using features from one of the three feature baskets, (text complexity, submission engagement, and submission term frequency).  </p>
+                            <p> Stacked models outperformed all their component base models in the validation accuracy and cross validation mean metrics. Term frequency was the most predictive of the feature groupings.
+The logistic regression models trained on submission text performed almost identically to the estimator trained exclusively on the submission text. 
+Validation accuracy of AdaBoost model which used only metrics representing the complexity of the language of the features was 72.9%, showing the complexity and length of the words, sentences and document itself are indicative of which subreddit the document belongs to.
+Validation accuracy of the Knn, RF, and Decision Tree models show engagement on the submission is indicative of which subreddit the post belongs to.
+
+</p>
                       
                         </div>
 
@@ -90,8 +95,18 @@
                             <div class="subheading mb-3"> <a href="assets\TSLA Time Series Forecasting.pdf" target="_blank">Project Overview</a> · <a href="https://github.com/catherinesanso/TSLA-Time-Series-Forecasts" target=_blank>Github Repo</a> </div>
                             <img src="img\house_sale_price.png" width="450" height="250">
                             <br><br>
-                            <p>Python, with its vast ecosystem of libraries and tools, has become a preferred language for financial analysis and prediction. Among its many applications, scraping financial data using Yahoo's API has gained popularity due to several advantages. This research explores the benefits of Python's Yahoo API scraping, focusing on its utility in predicting Tesla's closing prices, incorporating sentiment analysis, and explores time series modeling, its assumptions, various methods, and its advantages and limitations.<\p>
-                            <p>Predicting stock prices, like Tesla's (NYSE: TSLA), is a complex task that combines financial indicators, market sentiment, and historical data. This research encompasses several time series modeling techniques of varying complexity to analyze and forecast sequential data. Time series modeling is essential in the domain of financial analysis, such as predicting stock prices. This project delves into several types of time series modeling, each with its unique approach and use cases: Naive Forecast, Historic Mean, Simple Exponential Smoothing, Holt-Winters', SARIMA, and SARIMAX.<\p>
+                            <p>The objective was to create a model that will predict the sales price of housing in low and medium density residential areas.<\p>
+                            <p>A series of preprocessing and feature engineering steps were undertaken. Among the most important preprocessing steps were dropping the observations that represented 
+                                dissimilar types of housing (such as low density housing and boats). Dropping the columns that had nulls in more than 6% of the rows.  
+                                Impute the missing values of features with less than 6% missing using a Random Forest model. 
+                                Engineer a metric to represent the degree of concentration within the categories of a feature. The metric is the Herfindahl-Hirschman Index
+                                traditonally used to calculate the degree of firm concentration in an industry, but applied to the categories of the feature. 
+                                Engineer a metric to represent the correlation of a categorical variable with all the other categorical vairables. This was perforemd by 
+                                calculating the sum of a feature's Cramer V with all the other features. Calculat the F-statistic of the feature to see if a change in the
+                                feature leads to change in the mean of the dependent variable (these three metrics to prioritize which categorical vairables to include 
+                                in the model). Standardize all the features and PCA the highly correlated ones. 
+                                <\p>
+                            <p> The model explains 77.15% of the variation in the dependent vaiable (saleprice). PCA components have very low correlation with other features.<\p>
                       
                         </div>
 
@@ -103,9 +118,9 @@
                             <div class="subheading mb-3"> <a href="assets\Red Facial Age Classifiers.pdf" target="_blank">Project Overview</a> · <a href="https://github.com/catherinesanso/Wine-Recommendation-System" target=_blank>Github Repo</a> </div>
                             <img src="img\age_facial_image.png" width="250" height="250">
                             <br><br>
-                            <p>Recommendation systems, often referred to as recommender systems or recommendation engines, are a cornerstone of modern digital experiences. They are the algorithms behind personalized suggestions that we encounter in our daily online interactions, whether it's movie recommendations on Netflix, product suggestions on Amazon, or playlist recommendations on Spotify. These systems are designed to analyze and understand user preferences and behavior, enabling platforms to provide tailored content, products, or services.<\p>
-                            <p>I am leading a team of consultants who are tasked with pitching recommendation systems to executives at Wine.com. There is great potential in leveraging the website's vast user and product data to drive revenue and enhance user experiences. The challenge is harnessing this wealth of information effectively. My proposal is to implement three key recommender systems tailored to Wine.com's business: Polularity Model, Content-Based Filtering, and Collaborative Filtering<\p>
-                            <p> Ultimately, our recommendation engines will significantly enhance the user experience, drive sales, and increase user retention. They provide the means to deliver tailored advertisements, which, in turn, will maximize ad revenue. With these systems in place, Wine.com will not only satisfy existing customers but also attract new ones, fostering long-term growth and profitability.</p>
+                            <p>objective 1<\p>
+                            <p>objective 2<\p>
+                            <p>objective 3</p>
                         </div>
             </section>
 
@@ -171,10 +186,9 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">The Cooper Union</h3>
-                            <div class="subheading mb-3">Masters of Engineering in Civil Engineering <br> Bachelors of Engineering in Civil Engineering</div>
+                            <h3 class="mb-0">Macaulay Baruch</h3>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"> September 2010 - May 2014</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"> September 2013 - May 2017</span></div>
                 </div>
             </section>
 
@@ -186,7 +200,7 @@
                     <p>
                    I'm a data scientist with a keen interest in applying complex math techniques to finance, economics, and current events. 
                    </p>
-                    <p class="mb-0">When I'm not wrangling data sets, you can find me on the golf course or volleyball court, or outside with a good novel. </p>
+                    <p class="mb-0">When I'm not wrangling data sets, you can find me on the volleyball court, on the track, or combing through publicly traded firms' quarterly reports. </p>
                 </div>
             </section>
         </div>
